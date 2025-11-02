@@ -182,15 +182,17 @@ section {
 }
 
 .our-team-header {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
+}
+
+.our-team-member-info-section {
+padding: 32px 0 3px;
+text-align: center;
+border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-member {
-  padding: 32px 0 3px;
-}
-
-.our-team-member-position {
-  padding-bottom: 32px;
+  margin-bottom: 8px
 }
 
 /*region portfolio*/
