@@ -44,7 +44,8 @@ section {
   /* header*/
 
   .page-header {
-   border-bottom: 1px solid #e7e9fc; 
+   border-bottom: 1px solid #e7e9fc;
+   
   }
 
   .header-container {
@@ -60,6 +61,7 @@ section {
     display: flex;
     align-items: center;
     gap: 40px;
+    
   }
 
   .contacts-nav {
@@ -69,16 +71,20 @@ section {
   }
 
   .logo-logo {
-   padding: 24px 0;
    margin-right: 76px;
+   padding: 24px 0
   }
+
  /*region solutions*/
 
  .container-solutions {
   justify-content: center;
-  padding: 188px 0 188px;
   flex-direction: column;
  }
+
+.main-title-section {
+padding: 188px 0;
+}
 
   h1 {
     font-weight: 700;
@@ -203,6 +209,7 @@ text-align: center;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .our-portfolio {
@@ -214,12 +221,7 @@ margin-bottom: 72px;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  row-gap: 48px;
-  margin-bottom: 48px 
-}
-
-.our-portfolio-nav-item:nth-child(4) :nth-child(5) :nth-child(6) {
-  margin-bottom: 0;
+  
 }
 
 .portfolio-container {
