@@ -3,10 +3,26 @@
     color:#434455;
     background-color: #ffffff;
     font-weight: 400;
+    margin: 0;
   }
-       
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
   ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+section {
+  padding: 120px 0;
+}
+    /*common*/
+ .container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 
   a {
@@ -17,19 +33,61 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin: 0;
   }
 
+  /* header*/
+
+  .page-header {
+   border-bottom: 1px solid #e7e9fc; 
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-nav-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contacts-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .logo-logo {
+   padding: 24px 0;
+   margin-right: 76px;
+  }
+ /*region solutions*/
+
+ .container-solutions {
+  justify-content: center;
+  padding: 188px;
+  flex-direction: column;
+ }
+
   h1 {
-    font-weight: 700;
+    font-weight: 700 / 1.07143;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
   }
- .main-title-section {
+
+  .main-title-section {
   background-color: #2e2f42;
  }
+
  .our-team {
   background-color: #F4F4FD;
  }
@@ -42,12 +100,28 @@
    color: #ffffff;
    cursor: pointer;  
    background-color: #4D5AE5;
+   margin-top: 48px;
  }
 
   button:hover, button:focus {
     background-color: #404BBF;
  } 
  
+ /*region solutions list*/
+ 
+.about-webstudio {
+  display: flex;
+  gap: 24px
+}
+
+.about-webstudio-item {
+  width: calc(100%-72px)/4;
+  
+}
+
+.about-webstudio-subheader {
+  margin-bottom: 8px;
+}
   h2 {
       font-weight: 700;
       font-size: 36px;
@@ -66,7 +140,69 @@
     color: #2e2f42;
   }
 
-  .header-logo {
+  /*region our team*/
+.our-team-list {
+  display: flex;
+  gap: 24px;
+ }
+
+.our-team-item {
+  width: 264px;
+  height: 380px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+}
+
+.our-team-header {
+  padding-bottom: 72px;
+}
+
+.our-team-member {
+  padding: 32px 0 3px;
+}
+
+.our-team-member-position {
+  padding-bottom: 32px;
+}
+
+/*region portfolio*/
+
+.our-portfolio-nav {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.our-portfolio {
+padding-bottom: 72px;
+}
+
+.our-portfolio-nav-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px
+}
+
+.portfolio-container {
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding-block: 32px;
+  padding-inline: 16px;
+  width: 360px;
+  height: 120px;
+
+}
+
+.header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -74,13 +210,16 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-  }
+    margin-bottom: 8px;
+}
 
   .header-logo .logo-part {
     color: #2e2f42;
   }
 
   .nav-link {
+    padding: 24px 0;
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -95,6 +234,7 @@
 
   .contacts {
     font-style: normal;
+    margin-left: auto;
   }
 
   .contacts-link {
@@ -102,6 +242,7 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding: 24px 0;
   }
 
   .contacts-link:hover,
@@ -113,8 +254,13 @@
     background-color: #FFFFFF;
   }
 
+  /*footer*/
+
   .page-footer {
     background-color: #2e2f42;
+    padding: 100px 0;
+    gap: 8px;
+    flex-direction: column;
   }
 
   .footer-logo {
@@ -128,9 +274,15 @@
   }
 
   .footer-logo .logo-part {
-    color: #f4f4fd;
+    color: #f4f4fd;    
   }
   
   .footer-slogan {
    color: #f4f4fd;
+   display: block;
+   width: 262px;
+   height: 72px;
   }
+
+ 
+  
